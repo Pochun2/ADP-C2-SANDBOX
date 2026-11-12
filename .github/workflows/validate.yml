@@ -18,4 +18,4 @@ jobs:
       - name: Sandbox baseline tests
         run: python -B -m unittest discover -s tests -v
       - name: Test count guard
-        run: python -B -c "import unittest; n=unittest.defaultTestLoader.discover('tests').countTestCases(); print('TEST_COUNT='+str(n)); assert n==11"
+        run: python -B -c "import unittest; n=unittest.defaultTestLoader.discover('tests').countTestCases(); print('TEST_COUNT='+str(n)); assert n==12"
